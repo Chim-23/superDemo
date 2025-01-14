@@ -1,0 +1,10 @@
+1.* What went wrong:
+Execution failed for task ':app:checkDebugAarMetadata'.
+> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.
+   > Failed to transform BlurView-version-2.0.3.aar (com.github.Dimezis:BlurView:version-2.0.3) to match attributes {artifactType=android-aar-metadata, org.gradle.category=library, org.gradle.dependency.bundling=external, org.gradle.libraryelements=aar, org.gradle.status=release, org.gradle.usage=java-runtime}.
+      > Could not find BlurView-version-2.0.3.aar (com.github.Dimezis:BlurView:version-2.0.3).
+        Searched in the following locations:
+            https://www.jitpack.io/com/github/Dimezis/BlurView/version-2.0.3/BlurView-version-2.0.3.aar
+解决方案：
+1.npm uninstall expo-blur
+2.npx expo run:android -d
